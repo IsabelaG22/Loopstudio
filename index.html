@@ -161,19 +161,19 @@
     </footer>
 
     <script>
-      const hamburgerMenu = document.querySelector(".hamburger-menu");
+      const menuHamburguesa = document.querySelector(".hamburger-menu");
       const navLinks = document.querySelector(".nav-links");
-      const closeMenu = document.querySelector(".close-menu");
+      const cerrarMenu = document.querySelector(".close-menu");
       document.addEventListener("DOMContentLoaded", function () {
-        hamburgerMenu.addEventListener("click", () => {
+        menuHamburguesa.addEventListener("click", () => {
           navLinks.classList.add("active");
-          hamburgerMenu.classList.add("active");
-          closeMenu.style.display = "block";
+          menuHamburguesa.classList.add("active");
+          cerrarMenu.style.display = "block";
         });
-        closeMenu.addEventListener("click", () => {
+        cerrarMenu.addEventListener("click", () => {
           navLinks.classList.remove("active");
-          hamburgerMenu.classList.remove("active");
-          closeMenu.style.display = "none";
+          menuHamburguesa.classList.remove("active");
+          cerrarMenu.style.display = "none";
         });
       });
     </script>
