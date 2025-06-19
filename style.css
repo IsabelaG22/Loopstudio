@@ -34,7 +34,7 @@ li a {
 }
 
 li a:hover {
-  border-bottom: 2px solid black;
+  border-bottom: 2px solid white;
 }
 
 .contenedor-imagen-fondo {
@@ -154,10 +154,17 @@ h1.titulo-banner {
   text-decoration: none;
   color: black;
   border: 2px solid black;
-  padding: 0.4rem 2rem;
+  padding: 0.6rem 2rem;
   display: flex;
 }
 
+
+.boton-ver-mas-card-desk a:hover,
+.boton-ver-mas-card-mobile a:hover {
+  background-color: black;
+  color: white;
+
+}
 .cont-cards {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -177,7 +184,23 @@ h1.titulo-banner {
   align-items: flex-end;
   padding: 1rem;
   position: relative;
+
+  
+  }
+
+ 
+
+.card:hover {
+  opacity: 0.9; 
 }
+
+.card:hover h3 {
+  color: black;
+  font-weight: 300; 
+  font-size: 30px;
+}
+
+
 
 .card h3 {
   font-size: 30px;
@@ -185,6 +208,7 @@ h1.titulo-banner {
   font-family: "Josefin Sans", sans-serif;
   font-weight: 200;
 }
+
 
 .card:nth-child(1) {
   background-image: url("images/desktop/image-deep-earth.jpg");
