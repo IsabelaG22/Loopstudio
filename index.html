@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="style.css" />
+    <link href="style.css" rel="stylesheet" />
   </head>
   <body>
     <section>
@@ -12,10 +12,13 @@
         <div class="contenedor-imagen-fondo">
           <nav>
             <figure>
-              <img src="images/logo.svg" alt="Logo de Loopstudios" class="logo-loopstudio"/>
+              <img
+                class="logo-loopstudio"
+                src="images/logo.svg"
+                alt="Logo de Loopstudios"
+              />
             </figure>
 
-            
             <div class="hamburger-menu">
               <div class="bar"></div>
               <div class="bar"></div>
@@ -25,19 +28,24 @@
             <ul class="nav-links">
               <li class="li-links">
                 <a href="#" target="_blank" rel="noopener noreferrer">About</a>
-                
               </li>
               <li class="li-links">
-                <a href="#" target="_blank" rel="noopener noreferrer">Careers</a>
+                <a href="#" target="_blank" rel="noopener noreferrer"
+                  >Careers</a
+                >
               </li>
               <li class="li-links">
                 <a href="#" target="_blank" rel="noopener noreferrer">Events</a>
               </li>
               <li class="li-links">
-                <a href="#" target="_blank" rel="noopener noreferrer">Products</a>
+                <a href="#" target="_blank" rel="noopener noreferrer"
+                  >Products</a
+                >
               </li>
               <li class="li-links">
-                <a href="#" target="_blank" rel="noopener noreferrer">Support</a>
+                <a href="#" target="_blank" rel="noopener noreferrer"
+                  >Support</a
+                >
               </li>
             </ul>
           </nav>
@@ -76,35 +84,35 @@
 
         <div class="cont-cards">
           <article class="card">
-            <h3>DEEP<br>EARTH</h3>
+            <h3>DEEP<br />EARTH</h3>
           </article>
 
           <article class="card">
-            <h3>NIGHT<br>ARCADE</h3>
+            <h3>NIGHT<br />ARCADE</h3>
           </article>
 
           <article class="card">
-            <h3>SOCCER<br>TEAM VR</h3>
+            <h3>SOCCER<br />TEAM VR</h3>
           </article>
 
           <article class="card">
-            <h3>THE<br>GRID</h3>
+            <h3>THE<br />GRID</h3>
           </article>
 
           <article class="card">
-            <h3>FROM UP<br>ABOVE VR</h3>
+            <h3>FROM UP<br />ABOVE VR</h3>
           </article>
 
           <article class="card">
-            <h3>POCKET<br>BOREALIS</h3>
+            <h3>POCKET<br />BOREALIS</h3>
           </article>
 
           <article class="card">
-            <h3>THE<br>CURIOSITY</h3>
+            <h3>THE<br />CURIOSITY</h3>
           </article>
 
           <article class="card">
-            <h3>MAKE IT<br>FISHEYE</h3>
+            <h3>MAKE IT<br />FISHEYE</h3>
           </article>
         </div>
 
@@ -121,20 +129,48 @@
             <img src="images/logo.svg" alt="Logo de Loopstudios" />
           </figure>
           <ul class="listado-op">
-            <li class="li-links-footer"><a href="http://" target="_blank" rel="noopener noreferrer">About</a></li>
-            <li class="li-links-footer"><a href="http://" target="_blank" rel="noopener noreferrer">Careers</a></li>
-            <li class="li-links-footer"><a href="http://" target="_blank" rel="noopener noreferrer">Events</a></li>
-            <li class="li-links-footer"><a href="http://" target="_blank" rel="noopener noreferrer">Products</a></li>
-            <li class="li-links-footer"><a href="http://" target="_blank" rel="noopener noreferrer">Support</a></li>
+            <li class="li-links-footer">
+              <a href="http://" target="_blank" rel="noopener noreferrer"
+                >About</a
+              >
+            </li>
+            <li class="li-links-footer">
+              <a href="http://" target="_blank" rel="noopener noreferrer"
+                >Careers</a
+              >
+            </li>
+            <li class="li-links-footer">
+              <a href="http://" target="_blank" rel="noopener noreferrer"
+                >Events</a
+              >
+            </li>
+            <li class="li-links-footer">
+              <a href="http://" target="_blank" rel="noopener noreferrer"
+                >Products</a
+              >
+            </li>
+            <li class="li-links-footer">
+              <a href="http://" target="_blank" rel="noopener noreferrer"
+                >Support</a
+              >
+            </li>
           </ul>
         </div>
 
         <div class="cont-der-footer">
           <div class="logos-redes">
-            <a class="link-redes-sociales"><img src="images/icon-facebook.svg" alt="Facebook" /></a>
-            <a class="link-redes-sociales"><img src="images/icon-twitter.svg" alt="Twitter" /></a>
-            <a class="link-redes-sociales"><img src="images/icon-pinterest.svg" alt="Pinterest" /></a>
-            <a class="link-redes-sociales"><img src="images/icon-instagram.svg" alt="Instagram" /></a>
+            <a class="link-redes-sociales"
+              ><img src="images/icon-facebook.svg" alt="Facebook"
+            /></a>
+            <a class="link-redes-sociales"
+              ><img src="images/icon-twitter.svg" alt="Twitter"
+            /></a>
+            <a class="link-redes-sociales"
+              ><img src="images/icon-pinterest.svg" alt="Pinterest"
+            /></a>
+            <a class="link-redes-sociales"
+              ><img src="images/icon-instagram.svg" alt="Instagram"
+            /></a>
           </div>
           <div class="copyright">
             <p>© 2021 Loopstudios. All rights reserved.</p>
@@ -148,19 +184,24 @@
       const menuHamburguesa = document.querySelector(".hamburger-menu");
       const navLinks = document.querySelector(".nav-links");
       const cerrarMenu = document.querySelector(".close-menu");
+      const logoNegocio = document.querySelector(".logo-loopstudio");
 
-      // se crea una funcion que escuche el click en menu hamburguesa y le añada clases de activo a los elementos capturados
+      // se crea una funcion que escuche el click en menu hamburguesa (es decir las tres rayas en vertical)y le añada clases de activo a los elementos capturados y a los demás, estilos para que estos aparezcan
       document.addEventListener("DOMContentLoaded", function () {
         menuHamburguesa.addEventListener("click", () => {
           navLinks.classList.add("active");
           menuHamburguesa.classList.add("active");
           cerrarMenu.style.display = "block";
+          logoNegocio.style.position = "fixed";
         });
+
+        //Se crea otro evento de click en el cual se escuchara en la X de cerrar y se eliminaran las clases y estilos agregados anteriormente
 
         cerrarMenu.addEventListener("click", () => {
           navLinks.classList.remove("active");
           menuHamburguesa.classList.remove("active");
           cerrarMenu.style.display = "none";
+          logoNegocio.style.position = "absolute";
         });
       });
     </script>
