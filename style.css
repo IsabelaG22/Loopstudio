@@ -416,7 +416,7 @@ nav ul {
   }
 
   .close-menu { justify-content: right; }
-  img.logo-loopstudio { z-index: 1001; }
+  img.logo-loopstudio { z-index: 1001;         position: absolute; }
 
   .contenedor-imagen-fondo {
     background-image: url("images/mobile/image-hero.jpg");
